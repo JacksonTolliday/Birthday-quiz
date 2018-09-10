@@ -39,3 +39,5 @@ day = input("And the day? ")
 
 monthlist = ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November']
 winter = monthlist[:3]
+spring = monthlist[3:5]
+summer = monthlist[]
