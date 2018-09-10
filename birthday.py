@@ -37,3 +37,5 @@ month = input("Hi " + name + ", what was the name of the month you were born in?
 year = input("And what year were you born in, " + name + "? ")
 day = input("And the day? ")
 
+monthlist = ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November']
+winter = monthlist[:3]
