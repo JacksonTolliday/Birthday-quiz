@@ -31,7 +31,12 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
-import datetime from datetime
+from datetime import datetime
+from calendar import month_name
+
+todaymonth = datetime.today().month
+today = datetime.today().day
+monthcheck = month_name[todaymonth]
 
 name = input("Hello, what is your name? ")
 month = input("Hi " + name + ", what was the name of the month you were born in? ")
@@ -69,7 +74,11 @@ elif year >= 1980:
             yearprint = 'nineties'
         else: # the only combination left is two thousands
             yearprint = 'two thousands'
-if month == October and day == 31:
+
+
+if month == "October" and day == 31:
     print("You were born on Halloween!")
-elif 
-print("" + str(name) + ", you are a " + str(seasonprint) + " baby of the " + str(yearprint) + ".")
+elif month == monthcheck and day == today:
+    print('Happy birthday!')
+else:
+    print("" + str(name) + ", you are a " + str(seasonprint) + " baby of the " + str(yearprint) + ".")
